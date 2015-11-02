@@ -1,0 +1,846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C82554B11BC4755C00C8E0BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82554B01BC4755C00C8E0BD /* AppDelegate.swift */; };
+		C82554B61BC4755C00C8E0BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C82554B41BC4755C00C8E0BD /* Main.storyboard */; };
+		C82554B81BC4755C00C8E0BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82554B71BC4755C00C8E0BD /* Assets.xcassets */; };
+		C82554BB1BC4755C00C8E0BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C82554B91BC4755C00C8E0BD /* LaunchScreen.storyboard */; };
+		C82554C61BC4755D00C8E0BD /* SafetyGaugeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82554C51BC4755D00C8E0BD /* SafetyGaugeTests.swift */; };
+		C82554D11BC4755D00C8E0BD /* SafetyGaugeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82554D01BC4755D00C8E0BD /* SafetyGaugeUITests.swift */; };
+		C82554D61BC4755D00C8E0BD /* SafetyGauge WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C82554D51BC4755D00C8E0BD /* SafetyGauge WatchKit App.app */; };
+		C82554DC1BC4755D00C8E0BD /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C82554DA1BC4755D00C8E0BD /* Interface.storyboard */; };
+		C82554DE1BC4755D00C8E0BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82554DD1BC4755D00C8E0BD /* Assets.xcassets */; };
+		C82554E51BC4755D00C8E0BD /* SafetyGauge WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C82554E41BC4755D00C8E0BD /* SafetyGauge WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C82554EC1BC4755D00C8E0BD /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82554EB1BC4755D00C8E0BD /* InterfaceController.swift */; };
+		C82554EE1BC4755D00C8E0BD /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82554ED1BC4755D00C8E0BD /* ExtensionDelegate.swift */; };
+		C82554F01BC4755D00C8E0BD /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82554EF1BC4755D00C8E0BD /* NotificationController.swift */; };
+		C82554F21BC4755D00C8E0BD /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82554F11BC4755D00C8E0BD /* GlanceController.swift */; };
+		C82554F41BC4755D00C8E0BD /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82554F31BC4755D00C8E0BD /* ComplicationController.swift */; };
+		C82554F61BC4755D00C8E0BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82554F51BC4755D00C8E0BD /* Assets.xcassets */; };
+		C85A4BD31BC5B4E800BB74F1 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85A4BD21BC5B4E800BB74F1 /* TabBarViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C85A4BD61BC5B6D500BB74F1 /* safety.png in Resources */ = {isa = PBXBuildFile; fileRef = C85A4BD51BC5B6D500BB74F1 /* safety.png */; settings = {ASSET_TAGS = (); }; };
+		C85A4BD81BC5CF6300BB74F1 /* SafetyGaugeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85A4BD71BC5CF6300BB74F1 /* SafetyGaugeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C85A4BDA1BC71CAE00BB74F1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C85A4BD91BC71CAE00BB74F1 /* CoreLocation.framework */; };
+		C8CC71E91BDA9B5C0059CDA1 /* CrimeDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC71E81BDA9B5C0059CDA1 /* CrimeDataHelper.swift */; settings = {ASSET_TAGS = (); }; };
+		C8CC71EA1BDA9B7F0059CDA1 /* CrimeDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC71E81BDA9B5C0059CDA1 /* CrimeDataHelper.swift */; settings = {ASSET_TAGS = (); }; };
+		C8CC71EC1BDAA9750059CDA1 /* CrimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC71EB1BDAA9750059CDA1 /* CrimeData.swift */; settings = {ASSET_TAGS = (); }; };
+		C8CC71ED1BDAA9750059CDA1 /* CrimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC71EB1BDAA9750059CDA1 /* CrimeData.swift */; settings = {ASSET_TAGS = (); }; };
+		C8CC71F01BDD6FF70059CDA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82554B71BC4755C00C8E0BD /* Assets.xcassets */; };
+		C8CC71F21BDD71360059CDA1 /* CrimeDataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC71F11BDD71360059CDA1 /* CrimeDataUtil.swift */; settings = {ASSET_TAGS = (); }; };
+		C8CC71F31BDD72570059CDA1 /* CrimeDataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC71F11BDD71360059CDA1 /* CrimeDataUtil.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C82554C21BC4755D00C8E0BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C82554A51BC4755C00C8E0BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C82554AC1BC4755C00C8E0BD;
+			remoteInfo = SafetyGauge;
+		};
+		C82554CD1BC4755D00C8E0BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C82554A51BC4755C00C8E0BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C82554AC1BC4755C00C8E0BD;
+			remoteInfo = SafetyGauge;
+		};
+		C82554D71BC4755D00C8E0BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C82554A51BC4755C00C8E0BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C82554D41BC4755D00C8E0BD;
+			remoteInfo = "SafetyGauge WatchKit App";
+		};
+		C82554E61BC4755D00C8E0BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C82554A51BC4755C00C8E0BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C82554E31BC4755D00C8E0BD;
+			remoteInfo = "SafetyGauge WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C82554FD1BC4755D00C8E0BD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C82554E51BC4755D00C8E0BD /* SafetyGauge WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C82555011BC4755D00C8E0BD /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C82554D61BC4755D00C8E0BD /* SafetyGauge WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C82554AD1BC4755C00C8E0BD /* SafetyGauge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafetyGauge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C82554B01BC4755C00C8E0BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C82554B51BC4755C00C8E0BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C82554B71BC4755C00C8E0BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C82554BA1BC4755C00C8E0BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C82554BC1BC4755C00C8E0BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C82554C11BC4755D00C8E0BD /* SafetyGaugeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafetyGaugeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C82554C51BC4755D00C8E0BD /* SafetyGaugeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyGaugeTests.swift; sourceTree = "<group>"; };
+		C82554C71BC4755D00C8E0BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C82554CC1BC4755D00C8E0BD /* SafetyGaugeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafetyGaugeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C82554D01BC4755D00C8E0BD /* SafetyGaugeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyGaugeUITests.swift; sourceTree = "<group>"; };
+		C82554D21BC4755D00C8E0BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C82554D51BC4755D00C8E0BD /* SafetyGauge WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SafetyGauge WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C82554DB1BC4755D00C8E0BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C82554DD1BC4755D00C8E0BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C82554DF1BC4755D00C8E0BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C82554E41BC4755D00C8E0BD /* SafetyGauge WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SafetyGauge WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C82554EA1BC4755D00C8E0BD /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C82554EB1BC4755D00C8E0BD /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		C82554ED1BC4755D00C8E0BD /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		C82554EF1BC4755D00C8E0BD /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		C82554F11BC4755D00C8E0BD /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		C82554F31BC4755D00C8E0BD /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		C82554F51BC4755D00C8E0BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C82554F71BC4755D00C8E0BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C85A4BD21BC5B4E800BB74F1 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		C85A4BD51BC5B6D500BB74F1 /* safety.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = safety.png; sourceTree = "<group>"; };
+		C85A4BD71BC5CF6300BB74F1 /* SafetyGaugeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafetyGaugeViewController.swift; sourceTree = "<group>"; };
+		C85A4BD91BC71CAE00BB74F1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C8CC71E81BDA9B5C0059CDA1 /* CrimeDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrimeDataHelper.swift; sourceTree = "<group>"; };
+		C8CC71EB1BDAA9750059CDA1 /* CrimeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrimeData.swift; sourceTree = "<group>"; };
+		C8CC71F11BDD71360059CDA1 /* CrimeDataUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrimeDataUtil.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C82554AA1BC4755C00C8E0BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C85A4BDA1BC71CAE00BB74F1 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C82554BE1BC4755D00C8E0BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C82554C91BC4755D00C8E0BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C82554E11BC4755D00C8E0BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C82554A41BC4755C00C8E0BD = {
+			isa = PBXGroup;
+			children = (
+				C85A4BD91BC71CAE00BB74F1 /* CoreLocation.framework */,
+				C85A4BD41BC5B6D500BB74F1 /* resources */,
+				C82554AF1BC4755C00C8E0BD /* SafetyGauge */,
+				C82554C41BC4755D00C8E0BD /* SafetyGaugeTests */,
+				C82554CF1BC4755D00C8E0BD /* SafetyGaugeUITests */,
+				C82554D91BC4755D00C8E0BD /* SafetyGauge WatchKit App */,
+				C82554E81BC4755D00C8E0BD /* SafetyGauge WatchKit Extension */,
+				C82554AE1BC4755C00C8E0BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C82554AE1BC4755C00C8E0BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C82554AD1BC4755C00C8E0BD /* SafetyGauge.app */,
+				C82554C11BC4755D00C8E0BD /* SafetyGaugeTests.xctest */,
+				C82554CC1BC4755D00C8E0BD /* SafetyGaugeUITests.xctest */,
+				C82554D51BC4755D00C8E0BD /* SafetyGauge WatchKit App.app */,
+				C82554E41BC4755D00C8E0BD /* SafetyGauge WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C82554AF1BC4755C00C8E0BD /* SafetyGauge */ = {
+			isa = PBXGroup;
+			children = (
+				C8CC71E61BDA9B5C0059CDA1 /* Shared */,
+				C82554B01BC4755C00C8E0BD /* AppDelegate.swift */,
+				C82554B41BC4755C00C8E0BD /* Main.storyboard */,
+				C82554B71BC4755C00C8E0BD /* Assets.xcassets */,
+				C82554B91BC4755C00C8E0BD /* LaunchScreen.storyboard */,
+				C82554BC1BC4755C00C8E0BD /* Info.plist */,
+				C85A4BD21BC5B4E800BB74F1 /* TabBarViewController.swift */,
+				C85A4BD71BC5CF6300BB74F1 /* SafetyGaugeViewController.swift */,
+			);
+			path = SafetyGauge;
+			sourceTree = "<group>";
+		};
+		C82554C41BC4755D00C8E0BD /* SafetyGaugeTests */ = {
+			isa = PBXGroup;
+			children = (
+				C82554C51BC4755D00C8E0BD /* SafetyGaugeTests.swift */,
+				C82554C71BC4755D00C8E0BD /* Info.plist */,
+			);
+			path = SafetyGaugeTests;
+			sourceTree = "<group>";
+		};
+		C82554CF1BC4755D00C8E0BD /* SafetyGaugeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C82554D01BC4755D00C8E0BD /* SafetyGaugeUITests.swift */,
+				C82554D21BC4755D00C8E0BD /* Info.plist */,
+			);
+			path = SafetyGaugeUITests;
+			sourceTree = "<group>";
+		};
+		C82554D91BC4755D00C8E0BD /* SafetyGauge WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				C82554DA1BC4755D00C8E0BD /* Interface.storyboard */,
+				C82554DD1BC4755D00C8E0BD /* Assets.xcassets */,
+				C82554DF1BC4755D00C8E0BD /* Info.plist */,
+			);
+			path = "SafetyGauge WatchKit App";
+			sourceTree = "<group>";
+		};
+		C82554E81BC4755D00C8E0BD /* SafetyGauge WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C82554EB1BC4755D00C8E0BD /* InterfaceController.swift */,
+				C82554ED1BC4755D00C8E0BD /* ExtensionDelegate.swift */,
+				C82554EF1BC4755D00C8E0BD /* NotificationController.swift */,
+				C82554F11BC4755D00C8E0BD /* GlanceController.swift */,
+				C82554F31BC4755D00C8E0BD /* ComplicationController.swift */,
+				C82554F51BC4755D00C8E0BD /* Assets.xcassets */,
+				C82554F71BC4755D00C8E0BD /* Info.plist */,
+				C82554E91BC4755D00C8E0BD /* Supporting Files */,
+			);
+			path = "SafetyGauge WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		C82554E91BC4755D00C8E0BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C82554EA1BC4755D00C8E0BD /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C85A4BD41BC5B6D500BB74F1 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				C85A4BD51BC5B6D500BB74F1 /* safety.png */,
+			);
+			name = resources;
+			path = SafetyGauge/resources;
+			sourceTree = "<group>";
+		};
+		C8CC71E61BDA9B5C0059CDA1 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C8CC71E71BDA9B5C0059CDA1 /* Model */,
+				C8CC71F11BDD71360059CDA1 /* CrimeDataUtil.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		C8CC71E71BDA9B5C0059CDA1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C8CC71E81BDA9B5C0059CDA1 /* CrimeDataHelper.swift */,
+				C8CC71EB1BDAA9750059CDA1 /* CrimeData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C82554AC1BC4755C00C8E0BD /* SafetyGauge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C82555021BC4755D00C8E0BD /* Build configuration list for PBXNativeTarget "SafetyGauge" */;
+			buildPhases = (
+				C82554A91BC4755C00C8E0BD /* Sources */,
+				C82554AA1BC4755C00C8E0BD /* Frameworks */,
+				C82554AB1BC4755C00C8E0BD /* Resources */,
+				C82555011BC4755D00C8E0BD /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C82554D81BC4755D00C8E0BD /* PBXTargetDependency */,
+			);
+			name = SafetyGauge;
+			productName = SafetyGauge;
+			productReference = C82554AD1BC4755C00C8E0BD /* SafetyGauge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C82554C01BC4755D00C8E0BD /* SafetyGaugeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C82555051BC4755D00C8E0BD /* Build configuration list for PBXNativeTarget "SafetyGaugeTests" */;
+			buildPhases = (
+				C82554BD1BC4755D00C8E0BD /* Sources */,
+				C82554BE1BC4755D00C8E0BD /* Frameworks */,
+				C82554BF1BC4755D00C8E0BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C82554C31BC4755D00C8E0BD /* PBXTargetDependency */,
+			);
+			name = SafetyGaugeTests;
+			productName = SafetyGaugeTests;
+			productReference = C82554C11BC4755D00C8E0BD /* SafetyGaugeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C82554CB1BC4755D00C8E0BD /* SafetyGaugeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C82555081BC4755D00C8E0BD /* Build configuration list for PBXNativeTarget "SafetyGaugeUITests" */;
+			buildPhases = (
+				C82554C81BC4755D00C8E0BD /* Sources */,
+				C82554C91BC4755D00C8E0BD /* Frameworks */,
+				C82554CA1BC4755D00C8E0BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C82554CE1BC4755D00C8E0BD /* PBXTargetDependency */,
+			);
+			name = SafetyGaugeUITests;
+			productName = SafetyGaugeUITests;
+			productReference = C82554CC1BC4755D00C8E0BD /* SafetyGaugeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C82554D41BC4755D00C8E0BD /* SafetyGauge WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C82554FE1BC4755D00C8E0BD /* Build configuration list for PBXNativeTarget "SafetyGauge WatchKit App" */;
+			buildPhases = (
+				C82554D31BC4755D00C8E0BD /* Resources */,
+				C82554FD1BC4755D00C8E0BD /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C82554E71BC4755D00C8E0BD /* PBXTargetDependency */,
+			);
+			name = "SafetyGauge WatchKit App";
+			productName = "SafetyGauge WatchKit App";
+			productReference = C82554D51BC4755D00C8E0BD /* SafetyGauge WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C82554E31BC4755D00C8E0BD /* SafetyGauge WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C82554FA1BC4755D00C8E0BD /* Build configuration list for PBXNativeTarget "SafetyGauge WatchKit Extension" */;
+			buildPhases = (
+				C82554E01BC4755D00C8E0BD /* Sources */,
+				C82554E11BC4755D00C8E0BD /* Frameworks */,
+				C82554E21BC4755D00C8E0BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SafetyGauge WatchKit Extension";
+			productName = "SafetyGauge WatchKit Extension";
+			productReference = C82554E41BC4755D00C8E0BD /* SafetyGauge WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C82554A51BC4755C00C8E0BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Dalal, Neha (GE Corporate)";
+				TargetAttributes = {
+					C82554AC1BC4755C00C8E0BD = {
+						CreatedOnToolsVersion = 7.0;
+						
+					};
+					C82554C01BC4755D00C8E0BD = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = C82554AC1BC4755C00C8E0BD;
+					};
+					C82554CB1BC4755D00C8E0BD = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = C82554AC1BC4755C00C8E0BD;
+					};
+					C82554D41BC4755D00C8E0BD = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					C82554E31BC4755D00C8E0BD = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = C82554A81BC4755C00C8E0BD /* Build configuration list for PBXProject "SafetyGauge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C82554A41BC4755C00C8E0BD;
+			productRefGroup = C82554AE1BC4755C00C8E0BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C82554AC1BC4755C00C8E0BD /* SafetyGauge */,
+				C82554C01BC4755D00C8E0BD /* SafetyGaugeTests */,
+				C82554CB1BC4755D00C8E0BD /* SafetyGaugeUITests */,
+				C82554D41BC4755D00C8E0BD /* SafetyGauge WatchKit App */,
+				C82554E31BC4755D00C8E0BD /* SafetyGauge WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C82554AB1BC4755C00C8E0BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C82554BB1BC4755C00C8E0BD /* LaunchScreen.storyboard in Resources */,
+				C85A4BD61BC5B6D500BB74F1 /* safety.png in Resources */,
+				C82554B81BC4755C00C8E0BD /* Assets.xcassets in Resources */,
+				C82554B61BC4755C00C8E0BD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C82554BF1BC4755D00C8E0BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C82554CA1BC4755D00C8E0BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C82554D31BC4755D00C8E0BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C82554DE1BC4755D00C8E0BD /* Assets.xcassets in Resources */,
+				C82554DC1BC4755D00C8E0BD /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C82554E21BC4755D00C8E0BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8CC71F01BDD6FF70059CDA1 /* Assets.xcassets in Resources */,
+				C82554F61BC4755D00C8E0BD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C82554A91BC4755C00C8E0BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8CC71E91BDA9B5C0059CDA1 /* CrimeDataHelper.swift in Sources */,
+				C85A4BD31BC5B4E800BB74F1 /* TabBarViewController.swift in Sources */,
+				C8CC71F21BDD71360059CDA1 /* CrimeDataUtil.swift in Sources */,
+				C8CC71EC1BDAA9750059CDA1 /* CrimeData.swift in Sources */,
+				C82554B11BC4755C00C8E0BD /* AppDelegate.swift in Sources */,
+				C85A4BD81BC5CF6300BB74F1 /* SafetyGaugeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C82554BD1BC4755D00C8E0BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C82554C61BC4755D00C8E0BD /* SafetyGaugeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C82554C81BC4755D00C8E0BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C82554D11BC4755D00C8E0BD /* SafetyGaugeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C82554E01BC4755D00C8E0BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C82554F01BC4755D00C8E0BD /* NotificationController.swift in Sources */,
+				C8CC71ED1BDAA9750059CDA1 /* CrimeData.swift in Sources */,
+				C82554EE1BC4755D00C8E0BD /* ExtensionDelegate.swift in Sources */,
+				C82554F41BC4755D00C8E0BD /* ComplicationController.swift in Sources */,
+				C82554EC1BC4755D00C8E0BD /* InterfaceController.swift in Sources */,
+				C8CC71EA1BDA9B7F0059CDA1 /* CrimeDataHelper.swift in Sources */,
+				C8CC71F31BDD72570059CDA1 /* CrimeDataUtil.swift in Sources */,
+				C82554F21BC4755D00C8E0BD /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C82554C31BC4755D00C8E0BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C82554AC1BC4755C00C8E0BD /* SafetyGauge */;
+			targetProxy = C82554C21BC4755D00C8E0BD /* PBXContainerItemProxy */;
+		};
+		C82554CE1BC4755D00C8E0BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C82554AC1BC4755C00C8E0BD /* SafetyGauge */;
+			targetProxy = C82554CD1BC4755D00C8E0BD /* PBXContainerItemProxy */;
+		};
+		C82554D81BC4755D00C8E0BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C82554D41BC4755D00C8E0BD /* SafetyGauge WatchKit App */;
+			targetProxy = C82554D71BC4755D00C8E0BD /* PBXContainerItemProxy */;
+		};
+		C82554E71BC4755D00C8E0BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C82554E31BC4755D00C8E0BD /* SafetyGauge WatchKit Extension */;
+			targetProxy = C82554E61BC4755D00C8E0BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C82554B41BC4755C00C8E0BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C82554B51BC4755C00C8E0BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C82554B91BC4755C00C8E0BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C82554BA1BC4755C00C8E0BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C82554DA1BC4755D00C8E0BD /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C82554DB1BC4755D00C8E0BD /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C82554F81BC4755D00C8E0BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C82554F91BC4755D00C8E0BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C82554FB1BC4755D00C8E0BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "SafetyGauge WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ge.SafetyGauge.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		C82554FC1BC4755D00C8E0BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "SafetyGauge WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ge.SafetyGauge.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		C82554FF1BC4755D00C8E0BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = SafetyGauge_WatchKit_Extension;
+				INFOPLIST_FILE = "SafetyGauge WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ge.SafetyGauge.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		C82555001BC4755D00C8E0BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = SafetyGauge_WatchKit_Extension;
+				INFOPLIST_FILE = "SafetyGauge WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ge.SafetyGauge.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		C82555031BC4755D00C8E0BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = SafetyGauge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ge.SafetyGauge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C82555041BC4755D00C8E0BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = SafetyGauge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ge.SafetyGauge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C82555061BC4755D00C8E0BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SafetyGaugeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ge.SafetyGaugeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SafetyGauge.app/SafetyGauge";
+			};
+			name = Debug;
+		};
+		C82555071BC4755D00C8E0BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SafetyGaugeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ge.SafetyGaugeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SafetyGauge.app/SafetyGauge";
+			};
+			name = Release;
+		};
+		C82555091BC4755D00C8E0BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SafetyGaugeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ge.SafetyGaugeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SafetyGauge;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C825550A1BC4755D00C8E0BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SafetyGaugeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ge.SafetyGaugeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SafetyGauge;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C82554A81BC4755C00C8E0BD /* Build configuration list for PBXProject "SafetyGauge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C82554F81BC4755D00C8E0BD /* Debug */,
+				C82554F91BC4755D00C8E0BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C82554FA1BC4755D00C8E0BD /* Build configuration list for PBXNativeTarget "SafetyGauge WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C82554FB1BC4755D00C8E0BD /* Debug */,
+				C82554FC1BC4755D00C8E0BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C82554FE1BC4755D00C8E0BD /* Build configuration list for PBXNativeTarget "SafetyGauge WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C82554FF1BC4755D00C8E0BD /* Debug */,
+				C82555001BC4755D00C8E0BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C82555021BC4755D00C8E0BD /* Build configuration list for PBXNativeTarget "SafetyGauge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C82555031BC4755D00C8E0BD /* Debug */,
+				C82555041BC4755D00C8E0BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C82555051BC4755D00C8E0BD /* Build configuration list for PBXNativeTarget "SafetyGaugeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C82555061BC4755D00C8E0BD /* Debug */,
+				C82555071BC4755D00C8E0BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C82555081BC4755D00C8E0BD /* Build configuration list for PBXNativeTarget "SafetyGaugeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C82555091BC4755D00C8E0BD /* Debug */,
+				C825550A1BC4755D00C8E0BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C82554A51BC4755C00C8E0BD /* Project object */;
+}
