@@ -38,6 +38,14 @@ class CrimeDataHelper: NSObject {
         task.resume()
     }
     
+    internal func dummyGetCrimesForGeoCode(latitude: Double?,
+                                      longitude:Double?,
+                                      forLastMonths: Int,
+                                      crimeDataHelperResults: (incidentsCount:Int) -> Void)
+    {
+        crimeDataHelperResults(incidentsCount: (Int)(arc4random_uniform(100)+1))
+    }
+    
     internal func getCrimesForGeoCode(latitude: Double?,
                                     longitude:Double?,
                                     forLastMonths: Int,

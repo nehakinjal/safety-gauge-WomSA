@@ -130,17 +130,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
             
             //locationManager.stopUpdatingLocation()
             
-//            if self.isSameLocation(location.coordinate.latitude, newLongitude: location.coordinate.longitude) {
-//                print("Location still the same")
-//                return
-//            }
+            if self.isSameLocation(location.coordinate.latitude, newLongitude: location.coordinate.longitude) {
+                print("Location still the same")
+                self.showCrimeData()
+                return
+            }
             
             self.latitude = location.coordinate.latitude
             self.longitude = location.coordinate.longitude
             
             NSLog("GPS Co-ordinates - Latitude:\(self.latitude) Longitude:\(self.longitude) ")
             
-            self.crimeDataHelper.getCrimesForGeoCode(self.latitude, longitude:self.longitude, forLastMonths: 3, crimeDataHelperResults: { (incidentsCount) -> Void in
+            self.crimeDataHelper.dummyGetCrimesForGeoCode(self.latitude, longitude:self.longitude, forLastMonths: 3, crimeDataHelperResults: { (incidentsCount) -> Void in
                 
                 self.crimeData.incidentsCount = incidentsCount
                 NSLog("Incidents at current location \(incidentsCount)")
@@ -159,7 +160,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
                             self.crimeData.currentLocation = locality
                             NSLog("Location Detected \(locality)")
                             
-//                            self.showCrimeData()
+                            self.showCrimeData()
                         
                         }
                     }
